@@ -71,9 +71,9 @@ def genre_view(request):
     genres = dataset["genre"].dropna().str.title().unique().tolist() if not dataset.empty else []
     return render(request, 'genre.html', {"genres": sorted(genres)})
 
-def top_charts_view(request):
+def community(request):
     songs = dataset.sample(n=min(50, len(dataset))).to_dict("records") if not dataset.empty else []
-    return render(request, 'top_charts.html', {"songs": songs})
+    return render(request, 'community.html', {"songs": songs})
 
 def trending_view(request):
     songs = dataset.sample(n=min(30, len(dataset))).to_dict("records") if not dataset.empty else []

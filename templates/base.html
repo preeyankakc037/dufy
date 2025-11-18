@@ -57,10 +57,10 @@
              class="nav-link flex items-center gap-5 {% if request.resolver_match.url_name == 'genre' %}active-link{% endif %}">
             <i class="fas fa-music"></i> <span>Genre</span>
           </a>
-          <a href="{% url 'top_charts' %}" 
-             class="nav-link flex items-center gap-5 {% if request.resolver_match.url_name == 'top_charts' %}active-link{% endif %}">
-            <i class="fas fa-chart-line"></i> <span>Top Charts</span>
-          </a>
+        <a href="{% url 'community' %}" 
+   class="nav-link flex items-center gap-5 {% if request.resolver_match.url_name == 'community' %}active-link{% endif %}">
+    <i class="fas fa-comments"></i> <span>Community</span>
+</a>
           <a href="{% url 'trending' %}" 
              class="nav-link flex items-center gap-5 {% if request.resolver_match.url_name == 'trending' %}active-link{% endif %}">
             <i class="fas fa-fire"></i> <span>Trending</span>
@@ -75,8 +75,8 @@
               <i class="fas fa-star"></i> <span>Favourites</span>
             </a>
             <!-- FIXED: 'playlist' → 'playlists' + correct url_name -->
-            <a href="{% url 'playlists' %}" 
-               class="nav-link flex items-center gap-5 {% if request.resolver_match.url_name == 'playlists' %}active-link{% endif %}">
+            <a href="{% url 'playlist' %}" 
+               class="nav-link flex items-center gap-5 {% if request.resolver_match.url_name == 'playlist' %}active-link{% endif %}">
               <i class="fas fa-list"></i> <span>Playlists</span>
             </a>
           </div>
@@ -110,7 +110,7 @@
           <ul class="space-y-2 text-gray-400 text-sm">
             <li><a href="{% url 'discover' %}" class="hover:text-green-400">Discover</a></li>
             <li><a href="{% url 'genre' %}" class="hover:text-green-400">Genres</a></li>
-            <li><a href="{% url 'top_charts' %}" class="hover:text-green-400">Top Charts</a></li>
+            <li><a href="{% url 'community' %}" class="hover:text-green-400">Community</a></li>
             <li><a href="{% url 'trending' %}" class="hover:text-green-400">Trending</a></li>
           </ul>
         </div>
@@ -120,7 +120,7 @@
           <ul class="space-y-2 text-gray-400 text-sm">
             <li><a href="{% url 'favourites' %}" class="hover:text-green-400">Favourites</a></li>
             <!-- FIXED: 'playlist' → 'playlists' -->
-            <li><a href="{% url 'playlists' %}" class="hover:text-green-400">Playlists</a></li>
+            <li><a href="{% url 'playlist' %}" class="hover:text-green-400">Playlists</a></li>
           </ul>
         </div>
 
