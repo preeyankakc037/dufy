@@ -1,5 +1,6 @@
 # DuFy: AI-Powered Music Recommendation System
 
+Check out here====> https://dufy.onrender.com/
 ## 🎧 Overview
 **DuFy** is an AI-powered music recommendation platform that delivers **personalized song suggestions** using **Natural Language Processing (NLP)** and **Machine Learning**.  
 Unlike traditional recommendation systems that rely only on listening history or popularity, DuFy analyzes **lyrics**, **metadata**, and **emotional context** to suggest songs that match the user’s intent, theme, or mood.
