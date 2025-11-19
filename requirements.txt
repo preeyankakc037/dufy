@@ -10,3 +10,4 @@ djangorestframework
 django-cors-headers
 torch==2.4.1
 gradio_client
+requests==2.32.3
