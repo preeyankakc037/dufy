@@ -1,8 +1,9 @@
+# urls.py
 from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.discover_view, name='home'),           # ← THIS FIXES THE 404
+    path('', views.discover_view, name='home'),
     path('discover/', views.discover_view, name='discover'),
     path('genre/', views.genre_view, name='genre'),
     path('community/', views.community, name='community'),

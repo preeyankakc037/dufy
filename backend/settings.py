@@ -242,3 +242,7 @@ CSRF_TRUSTED_ORIGINS = [
 # CORS
 # ----------------------------------------------------------------------
 CORS_ALLOW_ALL_ORIGINS = True
+
+
+SPOTIFY_CLIENT_ID = "c0afe9e4233d47488d80f9f3dc489330"
+SPOTIFY_CLIENT_SECRET = "a758cffd98a1465494add02605aecd72"

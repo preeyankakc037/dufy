@@ -24,3 +24,6 @@ def get_recommendations(request):
     except Exception as e:
         logger.error(f"Search failed for query='{query}': {str(e)}")
         return JsonResponse({"error": "Internal server error"}, status=500)
+    
+
+

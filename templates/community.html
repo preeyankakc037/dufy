@@ -4,6 +4,102 @@
 {% block title %}Community – DuFy{% endblock %}
 
 {% block content %}
+<style>
+/* Dark Theme for DuFy Community */
+body {
+    background-color: #1a1a1a;
+}
+
+/* Main container background */
+.max-w-7xl {
+    background-color: #1a1a1a;
+}
+
+/* Post cards and white backgrounds to dark */
+.bg-white {
+    background-color: #2a2a2a !important;
+}
+
+/* Text colors */
+.text-gray-800 {
+    color: #e0e0e0 !important;
+}
+
+.text-gray-700 {
+    color: #d0d0d0 !important;
+}
+
+.text-gray-600 {
+    color: #b0b0b0 !important;
+}
+
+.text-gray-500 {
+    color: #909090 !important;
+}
+
+.text-gray-400 {
+    color: #707070 !important;
+}
+
+/* Input fields */
+.bg-gray-100 {
+    background-color: #3a3a3a !important;
+    color: #e0e0e0 !important;
+}
+
+/* Borders */
+.border-gray-200 {
+    border-color: #404040 !important;
+}
+
+.border-gray-100 {
+    border-color: #383838 !important;
+}
+
+.border-gray-300 {
+    border-color: #4a4a4a !important;
+}
+
+/* Hover states */
+.hover\:bg-gray-50:hover {
+    background-color: #333333 !important;
+}
+
+/* Gradient backgrounds for playlists - Dark theme versions */
+.bg-gradient-to-r {
+    background: #2a2a2a !important;
+}
+
+.from-purple-50, .to-pink-50, .from-blue-50, .to-cyan-50, 
+.from-orange-50, .to-yellow-50, .from-green-50, .to-emerald-50 {
+    background: transparent !important;
+}
+
+/* Shadow adjustments */
+.shadow-md, .shadow-sm {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Green button stays same */
+.bg-green-500 {
+    background-color: #1db954 !important;
+}
+
+.hover\:bg-green-600:hover {
+    background-color: #1ed760 !important;
+}
+
+/* Placeholder text */
+input::placeholder {
+    color: #808080;
+}
+
+/* Focus ring color */
+.focus\:ring-gray-300:focus {
+    --tw-ring-color: #1db954 !important;
+}
+</style>
+
 <div class="max-w-7xl mx-auto px-4 py-8">
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
@@ -151,7 +247,7 @@
         <!-- FRIEND ACTIVITY FEED -->
         <div class="bg-white rounded-2xl shadow-sm p-4">
             <h3 class="text-gray-800 font-bold text-sm mb-4 flex items-center gap-2">
-                <i class="fas fa-users text-green-500"></i>
+                
                 Friend Activity
             </h3>
             <div class="space-y-3">
@@ -256,8 +352,8 @@
                         <p class="text-gray-800 font-semibold text-xs">Midnight Dreams</p>
                         <p class="text-gray-500 text-xs">The Weeknd</p>
                     </div>
-                    <button class="px-3 py-1 bg-green-500 hover:bg-green-600 text-white text-xs font-semibold rounded-full transition">
-                        Play
+                    <button class="px-3 py-1 bg-green-500 hover:bg-green-600 text-white text-xs font-semibold rounded-full transition flex items-center gap-1">
+                        <i class="fas fa-play"></i>
                     </button>
                 </div>
 
@@ -267,8 +363,8 @@
                         <p class="text-gray-800 font-semibold text-xs">Summer Vibes</p>
                         <p class="text-gray-500 text-xs">Calvin Harris</p>
                     </div>
-                    <button class="px-3 py-1 bg-green-500 hover:bg-green-600 text-white text-xs font-semibold rounded-full transition">
-                        Play
+                    <button class="px-3 py-1 bg-green-500 hover:bg-green-600 text-white text-xs font-semibold rounded-full transition flex items-center gap-1">
+                        <i class="fas fa-play"></i>
                     </button>
                 </div>
 
@@ -278,8 +374,8 @@
                         <p class="text-gray-800 font-semibold text-xs">Electric Storm</p>
                         <p class="text-gray-500 text-xs">Martin Garrix</p>
                     </div>
-                    <button class="px-3 py-1 bg-green-500 hover:bg-green-600 text-white text-xs font-semibold rounded-full transition">
-                        Play
+                    <button class="px-3 py-1 bg-green-500 hover:bg-green-600 text-white text-xs font-semibold rounded-full transition flex items-center gap-1">
+                        <i class="fas fa-play"></i>
                     </button>
                 </div>
 
@@ -289,8 +385,8 @@
                         <p class="text-gray-800 font-semibold text-xs">Neon Lights</p>
                         <p class="text-gray-500 text-xs">Dua Lipa</p>
                     </div>
-                    <button class="px-3 py-1 bg-green-500 hover:bg-green-600 text-white text-xs font-semibold rounded-full transition">
-                        Play
+                    <button class="px-3 py-1 bg-green-500 hover:bg-green-600 text-white text-xs font-semibold rounded-full transition flex items-center gap-1">
+                        <i class="fas fa-play"></i>
                     </button>
                 </div>
 
@@ -300,8 +396,8 @@
                         <p class="text-gray-800 font-semibold text-xs">Lost Paradise</p>
                         <p class="text-gray-500 text-xs">Kygo</p>
                     </div>
-                    <button class="px-3 py-1 bg-green-500 hover:bg-green-600 text-white text-xs font-semibold rounded-full transition">
-                        Play
+                    <button class="px-3 py-1 bg-green-500 hover:bg-green-600 text-white text-xs font-semibold rounded-full transition flex items-center gap-1">
+                        <i class="fas fa-play"></i>
                     </button>
                 </div>
             </div>

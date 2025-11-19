@@ -55,7 +55,7 @@ function loadFavorites() {
     favorites.forEach(track => {
         const img = track.image_url && track.image_url.trim() !== ""
             ? track.image_url
-            : "{% static 'searchbg.png' %}";
+            : "{% static 'indie.jpg' %}";
 
         const name = track.music_name || "Unknown Track";
         const artist = track.artist_name || "Unknown Artist";
